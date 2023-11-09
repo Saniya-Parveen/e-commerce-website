@@ -1,0 +1,334 @@
+<html>
+
+<head>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            height: 1000px;
+
+        }
+
+        #header {
+            background-color: black;
+            color: white;
+            height: 70px;
+            display: flex;
+        }
+
+        #title {
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            margin-right: 50px;
+        }
+
+        #index {
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #menu {
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center;
+
+        }
+
+        img {
+            margin: 20px;
+        }
+
+        h5 {
+            margin: 0;
+        }
+
+        #advertisement {
+            display: block;
+            margin: auto;
+            width: 100%;
+        }
+
+        #container {
+            display: grid;
+            width: 1200;
+            height: 300;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            margin: 20px auto;
+            gap: 20px;
+
+        }
+
+        .img1 {
+            grid-column: 1/3;
+            grid-row: 1/3;
+            background: url(https://i.insider.com/54fdc12decad042920ceb0c8?width=800&format=jpeg);
+
+        }
+
+        .img2 {
+            grid-column: 3/4;
+            background: url(https://assets.vogue.com/photos/640a5a256f71283d8e26255b/master/pass/00-promo.jpg);
+        }
+
+        .img3 {
+            grid-column: 3/4;
+            grid-row: 2/3;
+            background: url(https://www.fashiongonerogue.com/wp-content/uploads/2021/06/Model-Hijab-Head-Scarf-White-Outfit.jpg);
+        }
+
+        #container div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            color: white;
+            padding: 30px;
+            align-content: center;
+            background-position: center;
+            background-size: cover;
+        }
+        #productdetails {
+            display: grid;
+            width: 1000px;
+            height: 1200px;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(3,1fr) ;
+            margin: 70px auto;
+            gap: 20px;
+        }
+        #productdetails div {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 50px auto;
+        }
+        .macbook {
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+        .macbookdetails {
+            grid-column: 2/3;
+            grid-row: 1/2;
+        }
+        .samsungdetails{
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+        .samsunggalaxy{
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+        .Trimmer {
+            grid-column: 1/2;
+            grid-row: 3/4;
+        }
+        .Trimmerdetails {
+            grid-column: 2/3;
+            grid-row: 3/4;
+        }
+        .button{
+            margin-top: 10px;
+            padding: 5px ;
+            border-radius: 40%;
+            background-color: black;
+            color: white;
+        }
+        #footer {
+            margin-top: 100px;
+            padding: 30px;
+            background-color: black;
+            color: white;
+        }
+        #footer h2,
+        h4 {
+            text-align: center;
+
+        }
+        #footer h2 {
+            margin: 20px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div id="title">
+            <h1>E-Commerce Website</h1>
+        </div>
+        <div id="index">
+
+            <a href="Home.html">Home</a>
+            <a href="profile.html">profile</a>
+            <a href="users.html">users</a>
+            <a href="product.html">Product</a>
+            <a href="mycart.html">my cart</a>
+            <div>
+                <button>Logout</button>
+            </div>
+        </div>
+    </div>
+    <div id="menu">
+        <div>
+            <img src="https://t3.ftcdn.net/jpg/02/46/02/78/360_F_246027822_NwEoRdOEJZ9K62jkO0Stk39yDAt919hE.jpg"
+                width="100" height="80" />
+            <h5> Grocery</h5>
+        </div>
+        <div>
+            <img src="https://thumbor.forbes.com/thumbor/fit-in/x/https://www.forbes.com/uk/advisor/wp-content/uploads/2020/11/phones-switch-apps.jpg"
+                width="100" height="80" />
+            <h5> mobiles </h5>
+        </div>
+        <div>
+            <img src="https://img.freepik.com/free-photo/portrait-smiling-beautiful-girl-her-handsome-boyfriend-laughing-happy-cheerful-couple-sunglasses_158538-4997.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1696896000&semt=ais"
+                width="100" height="80" />
+            <h5>fashion</h5>
+        </div>
+        <div>
+            <img src="https://www.pngall.com/wp-content/uploads/1/Electronic.png" width="100" height="80" />
+            <h5>Electronics</h5>
+        </div>
+        <div>
+            <img src="https://png.pngitem.com/pimgs/s/4-43003_png-for-home-furniture-transparent-png.png" width="100"
+                height="80" />
+            <h5>Home and Furniture</h5>
+        </div>
+        <div>
+            <img src="https://parspng.com/wp-content/uploads/2023/06/Home-Appliancespng.parspng.com-4.png" width="100"
+                height="80" />
+            <h5>Appliances</h5>
+        </div>
+        <div>
+            <img src="https://t3.ftcdn.net/jpg/01/73/01/74/360_F_173017473_xRG5TrDyf7elY5PPC7Xt89Ar3imtHwF4.jpg"
+                width="100" height="80" />
+            <h5>Travel</h5>
+        </div>
+        <div>
+            <img src="https://media.istockphoto.com/id/909772478/photo/brown-teddy-bear-isolated-in-front-of-a-white-background.jpg?s=612x612&w=0&k=20&c=F4252bOrMfRTB8kWm2oM2jlb9JXY08tKCaO5G_ms1Uw="
+                width="100" height="80" />
+            <h5>Toys</h5>
+        </div>
+        <div>
+            <img src="https://images.ctfassets.net/wlke2cbybljx/6mPk5fQdHG1kigUEwHDozx/9e2930e8ac4b6f83a6e94b60e2f5b44a/PILLOW_TALK_MAKEUP_SECRETS-PT_Dreams-Packshot.png"
+                width="100" height="80" />
+            <h5>beauty</h5>
+        </div>
+    </div>
+    <div id="advertisement">
+        <div>
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/454ba4d96248fb5b.jpg?q=20" width="100%"
+                height="300" />
+        </div>
+
+    </div>
+    <div id="container">
+        <div class="img1">
+            <h1>Men's Fashion</h1>
+            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus eum exercitationem mollitia, incidunt
+                delectus cum, magni sapiente facere assumenda, error consectetur ipsam et unde blanditiis labore! Enim
+                alias perferendis laudantium?
+            </p>
+        </div>
+        <div class="img2">
+            <h1>Women's Fashion</h1>
+            <P> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus itaque at saepe asperiores ut esse
+                tempore! Eligendi pariatur voluptates, rerum, dolorem, totam et tenetur ut odit a optio obcaecati
+                labore!
+
+            </P>
+        </div>
+        <div class="img3">
+            <h1> Modern Fashion </h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero corrupti nemo vero id excepturi sint.
+                Culpa dignissimos quo odit saepe asperiores doloribus aliquid id amet aliquam, eius officia nemo quae.
+            </p>
+
+        </div>
+    </div>
+    <div id="productdetails">
+        <div class="macbook">
+            <img src="https://www.digitaltrends.com/wp-content/uploads/2021/11/macbook-pro-2021-01.jpg?p=1" 
+            width="450"
+            height="260" />
+        </div>
+        <div class="macbookdetails">
+            <h2> Macbook Pro</h2>
+            <P> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta ipsa enim culpa molestiae fugiat quasi
+                minima. Laudantium error optio rem reiciendis quia, veritatis facere unde ipsa esse eum et a! Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Sit, pariatur voluptatibus, assumenda unde libero
+                necessitatibus ad qui beatae quisquam, nemo non quis dolore! Hic voluptates soluta voluptatem voluptate
+                perferendis veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet delectus aliquam,
+                quos dicta similique mollitia ab! Laborum officia numquam molestiae iure et sint fugiat facere deleniti.
+                Id maiores enim alias? <br />
+
+            </P>
+            <input type="button" value="product details" class="button">
+        </div>
+        <div class="samsungdetails">
+            <h2> Samsumg Galaxy S3 Ultra</h2>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero beatae ad recusandae earum voluptate
+                saepe ullam aliquam. Dolor saepe autem esse, nesciunt quae hic a distinctio officia obcaecati rem vel!
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas architecto tenetur praesentium, nobis
+                soluta ad earum, ratione beatae autem quo quaerat mollitia nostrum, reiciendis eum quas possimus facilis
+                nesciunt id! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora eum accusantium enim a,
+                quia commodi dolore placeat maxime repellendus illum tenetur, ad doloribus ut! Nulla minima voluptates
+                inventore optio necessitatibus.
+                <br />
+            </p>
+            <input type="button" value="product details" class="button">
+
+        </div>
+        <div class="Samsunggalaxy">
+            <img src="https://images.samsung.com/is/image/samsung/assets/in/smartphones/galaxy-s23/buy/720X720_1.jpg"
+            width="450"
+            height="260"/>
+        </div>
+        <div class="Trimmer">
+            <img src="https://images.philips.com/is/image/philipsconsumer/16223389e358476a91d7ae790094206e?$jpglarge$&wid=960" 
+            width="450"
+            height="260" />
+        </div>
+        <div class="Trimmerdetails">
+            <h2>Trimmer</h2>
+            <P> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta ipsa enim culpa molestiae fugiat quasi
+                minima. Laudantium error optio rem reiciendis quia, veritatis facere unde ipsa esse eum et a! Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Sit, pariatur voluptatibus, assumenda unde libero
+                necessitatibus ad qui beatae quisquam, nemo non quis dolore! Hic voluptates soluta voluptatem voluptate
+                perferendis veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet delectus aliquam,
+                quos dicta similique mollitia ab! Laborum officia numquam molestiae iure et sint fugiat facere deleniti.
+                Id maiores enim alias? <br />
+
+            </P>
+            <input type="button" value="product details" class="button">
+        </div>
+        </div>
+
+        <div id="footer">
+        <h2> Footer Component </h2>
+        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam eaque accusamus cum provident quibusdam sunt corporis voluptatem labore animi officia rerum pariatur dolorum consectetur, quae dicta modi, consequuntur odit maxime? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam cum, repudiandae molestiae vitae temporibus voluptatem aperiam? Cumque deleniti, modi tempore, ducimus voluptate totam accusantium nesciunt laborum iure odio aut inventore? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda at eveniet asperiores vitae mollitia aliquid accusamus minima laborum consequatur cum saepe beatae, maiores dignissimos facere repellendus natus omnis! Illum, tenetur. 
+            
+            
+        </p>
+        <br />
+        <h4> All rights are reserved by Saniya Parveen </h4>
+        </div>
+
+
+
+    </body>
+
+</html>
